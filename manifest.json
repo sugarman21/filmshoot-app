@@ -1,0 +1,16 @@
+{
+    "name": "FilmShoot",
+    "short_name": "FilmShoot",
+    "description": "Film shooting assistant app",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#262626",
+    "theme_color": "#262626",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
