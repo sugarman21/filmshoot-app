@@ -323,3 +323,31 @@ body {
 #cameraModalCancelButton {
     width: 100%;
 }
+/* Sync-Status */
+.sync-status {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #444;
+    color: white;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.sync-status.online {
+    background-color: #4CAF50;
+}
+
+.sync-status.offline {
+    background-color: #F44336;
+}
+
+.sync-status.synchronisiere {
+    background-color: #2196F3;
+}
+
+.sync-status.fehler {
+    background-color: #FF9800;
+}
