@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="icon.png">
+    
+    <!-- Firebase SDK einbinden -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -91,6 +96,30 @@
                 <button id="cameraModalCancelButton">Cancel</button>
             </div>
         </div>
+    </div>
+
+    <!-- Login-Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="emailInput">Email:</label>
+                <input type="email" id="emailInput" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Passwort:</label>
+                <input type="password" id="passwordInput" placeholder="Passwort">
+            </div>
+            <div class="modal-actions">
+                <button id="loginButton">Login</button>
+                <button id="registerButton">Registrieren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status-Anzeige -->
+    <div id="syncStatus" class="sync-status">
+        <span>Offline</span>
     </div>
 
     <script src="script.js"></script>
